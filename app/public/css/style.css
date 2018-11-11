@@ -1,0 +1,32 @@
+html,
+body {
+    height: 100%;
+	background-image: url('../img/background.png');
+  	background-repeat: repeat;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input {
+	width: 500px;
+	height: 200px;
+}
+.background-w{
+	background-color: white;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+
+.sub-titile{
+	color: darkgrey;
+	font-size: 20px;
+}
+#result{
+	 width: 500px;
+}

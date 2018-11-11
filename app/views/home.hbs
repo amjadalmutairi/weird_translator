@@ -1,0 +1,34 @@
+<div class="row">
+	<div class="background-w">
+		<form role="form" action="/submit-text" method="post">
+			<h3>Welcom to the Weird Translator!</h3>
+			<hr>
+				<label class="sub-titile">Language: &nbsp;</label>
+				<input type="radio" id="lang-ar"  name="lang" value="ar">
+				<label for="lang-ar">&nbsp; TO ARABIC &nbsp;</label>
+				<input type="radio" id="lang-en"  name="lang" value="en">
+				<label for="lang-en">&nbsp; TO ENGLSIH &nbsp;</label>
+				<br>
+				<label class="sub-titile">PC: &nbsp;</label>
+				<input type="radio" id="pc-mac"  name="pc" value="mac">
+				<label for="pc-mac">&nbsp; MAC &nbsp;</label>
+				<input type="radio" id="pc-other"  name="pc" value="other">
+				<label for="pc-other">&nbsp; Others &nbsp;</label>
+			<div>
+				<textarea type="text" name ="input" id="input" placeholder="Enter Text"></textarea>
+			</div>
+
+			<div>
+				<button type="submit" class="btn btn-default">Translate</button>
+			</div>
+		</form>
+	</div>
+	<br>
+	<div class="background-w">
+		<h3>Translated Text</h3>
+		<hr>
+		<label class="sub-titile" id="result">{{result}}</label>
+		<br>
+		<button type="submit" class="btn btn-default" onclick="copy(result.innerText);">copy</button>
+	</div>
+</div>
