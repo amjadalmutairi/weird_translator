@@ -2,6 +2,9 @@
 	<div class="background-w">
 		<form role="form" action="/submit-text" method="post">
 			<h3>Welcom to the Weird Translator!</h3>
+			{{#if error}}
+    		<div class="alert alert-danger">{{error}}</div>
+			{{/if}}
 			<hr>
 				<label class="sub-titile">Language: &nbsp;</label>
 				<input type="radio" id="lang-ar"  name="lang" value="ar">
