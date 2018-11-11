@@ -83,7 +83,8 @@ exports.translate = function(text,pc,lang){
 		else {
 			return get_arabic(text,other_dict)
 		}
-	} else {
+	}
+	if (lang === "en") {
 		if (pc === "mac"){
 			return get_english(text,mac_dict)
 		}
@@ -91,6 +92,7 @@ exports.translate = function(text,pc,lang){
 			return get_english(text,other_dict)
 		}
 	}
+	return ""
 }
 
 function get_arabic(text,dict){
@@ -114,5 +116,5 @@ function get_english(text,dict){
 		}
 		else result +=  key;
 	}
-	return result
+	return result.charAt(0).toUpperCase() + result.slice(1).toLowerCase();
 }

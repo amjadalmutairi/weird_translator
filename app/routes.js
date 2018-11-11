@@ -4,7 +4,6 @@ const translator = require('./models/translator')
 const expressValidator = require('express-validator');
 
 router.use(expressValidator())
-
 router.get('/', function(req, res) {
   	res.status(200).render('home',{
     result: "",
